@@ -1,0 +1,55 @@
+title: SW Engineering Chs
+
+description: "Software Engineering - 최현수의 engineering"
+logo_img: "/assets/img/favicon.webp"
+profile_img: "/assets/img/profile.webp"
+
+# Social Links
+email: chs991209@gmail.com
+github_username: chs991209
+twitter_username: twitter
+instagram_username: choi_hys
+linkedin_username: chs991209
+facebook_username: choihyunsu
+
+# External API
+giscus_repo: "chs991209/chs991209.github.io"
+giscus_repoId: "MDEwOlJlcG9zaXRvcnkzNjIzOTM5NzQ="
+giscus_category: "Q&A"
+giscus_categoryId: "DIC_kwDOFZmxds4Ck4zm"
+goatcounter_code: QuestyleCmaTwelve
+google_analytics:
+
+# If your repo name follows the format "<user-name>.github.io", then leave the below blank.
+# Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
+baseurl:
+url: https://chs991209.github.io
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-loading-lazy
+
+exclude:
+  - docs/
+
+collections:
+  pages:
+    output: true
+    permalink: /:path.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      date: "1900-01-01"
+
+# Markdown newline activator 
+kramdown:
+  input: GFM
+  hard_wrap: true
